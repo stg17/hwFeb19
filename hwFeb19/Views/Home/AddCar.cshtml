@@ -1,0 +1,30 @@
+﻿<div b-d9lnukun0l class="container">
+    <div style="height: 80vh;" class="row justify-content-center align-items-center">
+        <div class="col-md-6 bg-light rounded-3 p-5">
+            <h1>Add Car</h1>
+            <form method="post" action="/home/addcar">
+                <input type="text" class="form-control" placeholder="Make" name="make" id="make" />
+                <br />
+                <input type="text" class="form-control" placeholder="Model" name="model" id="model" />
+                <br />
+                <input type="text" class="form-control" placeholder="Year" name="year" id="year" />
+                <br />
+                <input type="text" class="form-control" placeholder="Price" name="price" id="price" />
+                <br />
+                <select class="form-select" name="cartype" id="car-type">
+                    <option value="-1">-- Choose Car Type --</option>
+                    <option value="0">Sedan</option>
+                    <option value="1">SUV</option>
+                    <option value="2">Supercar</option>
+                </select>
+
+                <input type="checkbox" id="has-leather-seats" name="hasLeatherSeats" value="true" />
+                Has Leather Seats
+                <br />
+                <div class="d-grid gap-2 mt-3">
+                    <button disabled class="btn btn-primary" id="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
